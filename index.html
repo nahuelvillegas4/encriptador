@@ -8,24 +8,32 @@
 </head>
 <body>
     <main class="contenedor">
-        <img class="logo" src="./assets/Logo.png" alt="logo_alura">
+        <img class="logo" src="./assets/image.png" alt="logo_alura">
         <div class="contenedor__input">
-            <input class="contenedor__input__ingreso" type="text" value="Ingrese el texto aqui">
-            <div class="contenedor__input__boton">
-                <button class="contenedor__input__boton__azul">Encriptar</button>
-                <button class="contenedor__input__boton__blanco">Desencriptar</button>
-            </div>
-        </div>
-        <div class="contenedor__inicio">
-            <div class="contenedor__resultado__inicio">
-                <img src="./assets/Muñeco.png" alt="muñeco">
-                <div class="contenedor__resultado__inicio__texto">
-                    <h3 class="contenedor__resultado__inicio__texto__titulo">Ningún mensaje fue encontrado</h3>
-                    <p class="contenedor__resultado__inicio__texto__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="contenedor__textarea">
+                <textarea id="textoIngresado" class="contenedor__input__ingreso" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="contenedor__advertencia">
+                    <img src="./assets/advertencia.png" alt="advertencia__logo">
+                    <p>Solo letras minúsculas y sin acentos</p>
                 </div>
             </div>
-            <textarea class="hidden" name="" id=""></textarea>
-            <button class="contenedor__input__boton__copiar hidden">Copiar</button>
+            <div class="contenedor__input__boton">
+                <button onclick="encriptar()" class="contenedor__input__boton__azul">Encriptar</button>
+                <button onclick="desencriptar()"  class="contenedor__input__boton__blanco">Desencriptar</button>
+            </div>
+        </div>
+        <div id="contenedor__resultado" class="contenedor__inicio">
+            <div id="contenedor__bienvenida" class="contenedor__resultado__inicio">
+                <img id="imagen" src="./assets/Muñeco.png" alt="muñeco">
+                <div id="bienvenida" class="contenedor__resultado__inicio__texto">
+                    <h3 id="bienvenida_titulo" class="contenedor__resultado__inicio__texto__titulo">Ningún mensaje fue encontrado</h3>
+                    <p id="bienvenida_texto" class="contenedor__resultado__inicio__texto__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div id="resultado" class="contenedor__inicio__area__texto hidden">
+                <textarea class="area__texto hidden" name="" id="resultado__area__texto" readonly ></textarea>
+                <button onclick="copiar()" id="copiar" class="contenedor__input__boton__copiar hidden">Copiar</button>
+            </div>
         </div>
     </main>
     <script src="app.js"></script>
