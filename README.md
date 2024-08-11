@@ -1,5 +1,17 @@
 # Encriptador
 Desafio de alura academy en el cual se pidio el desarrollo de una pagina web responsiva en la que se permite escribir un texto para luego encriptarlo y poder copiarlo cliqueando el boton o de desencriptar un texto generado por este encriptador.
+El funcionamiento del encriptador es el siguiente:
+
+- `La letra "e" es convertida para "enter"`
+
+- `La letra "i" es convertida para "imes"`
+
+- `La letra "a" es convertida para "ai"`
+
+- `La letra "o" es convertida para "ober"`
+
+- `La letra "u" es convertida para "ufat"`
+
 
 Vistazo de la pagina para computadora de escritorio:
 ![image](https://github.com/user-attachments/assets/9818b474-36c1-425a-9e40-4a93fa40888c)
